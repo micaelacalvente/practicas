@@ -17,15 +17,15 @@ while tienda == "si":
     importe = float(input("Ingrese el total de su compra: "))
     if tapitas >= 100:
         print("Haz obtenido un descuento rojo!")
-        descuentoR = float((40*importe)/100)
-        print("El total de su compra es:", descuentoR)
+        descuentoR = float(importe * 0.6)
+        print("El total de su compra es: $", descuentoR)
     elif tapitas >= 20 and tapitas < 100:
         print("Haz obtenido un descuento amarillo!")
-        descuentoA = float((25*importe)/100)
-        print("El total de su compra es:", descuentoA)
+        descuentoA = float(importe * 0.75)
+        print("El total de su compra es: $", descuentoA)
     else:
         print("Lo siento el numero de tapitas no le corresponde ningun descuento")
-        print("El total de su compra es:", importe)
+        print(f"El total de su compra es: $ {importe}")
         break
 
 while tienda == "no":
